@@ -1,6 +1,3 @@
-alert('脚本注入成功');
-
-
 // 修改 dom 界面
 var box = $("td[colspan='2']")[1];
 $('<input/>', {
