@@ -26,7 +26,26 @@ courses_pk.PageMod({
     contentScriptFile: [self.data.url("js/jquery.js"), self.data.url("js/courses_pk.js"),],
 });
 
+// 导师评价嵌入代码
+var tutor_pk = require("sdk/page-mod");
+tutor_pk.PageMod({
+    include: /htto/,
+    contentScriptFile: [self.data.url("js/jquery.js"), self.data.url("js/tutor_pk.js"),],
+});
 
+// 实习评价嵌入代码
+var practice_pk = require("sdk/page-mod");
+practice_pk.PageMod({
+    include: /http/,
+    contentScriptFile: [self.data.url("js/jquery.j"), self.data.url("js/practice_pk.js"),],
+});
+
+// 自助学期短评
+var semester_pk = require("sdk/page-mod");
+semester_pk.PageMod.pageMod({
+    include: /http/,
+    contentScriptFile: [self.data.url("js/jquery.js"), self.data.url("js/semester_pk.js"),],
+});
 
 // 图标点击事件
 function handleClick(state) {
