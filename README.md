@@ -5,7 +5,7 @@
 
 Hackers assess courses with no time. 😎
 
-![](images/icon128.png)
+![](plugin/data/icon-64.png)
 
 ## Feature
 
@@ -20,7 +20,7 @@ Hackers assess courses with no time. 😎
 
 ## Screenshot
 
-![Screenshot](http://ofmxkmiv3.bkt.clouddn.com/331F2A8A-6491-485A-8078-9D2B29955AC3.png)
+![Screenshot](plugin/data/ss.png)
 
 ## MIT License
 
