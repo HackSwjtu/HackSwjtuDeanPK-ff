@@ -26,9 +26,28 @@ courses_pk.PageMod({
     contentScriptFile: [self.data.url("js/jquery.js"), self.data.url("js/courses_pk.js"),],
 });
 
+// 导师评价嵌入代码
+var tutor_pk = require("sdk/page-mod");
+tutor_pk.PageMod({
+    include: /http\:\/\/jiaowu.swjtu.edu.cn\/servlet\/AssessAction\?SetAction=viewAssess\&sid\=.+\&templateFlag\=1&type\=1/,
+    contentScriptFile: [self.data.url("js/jquery.js"), self.data.url("js/tutor_pk.js"),],
+});
 
+// 实习评价嵌入代码
+var practice_pk = require("sdk/page-mod");
+practice_pk.PageMod({
+    include: /http\:\/\/jiaowu.swjtu.edu.cn\/servlet\/AssessAction\?SetAction\=viewAssess\&sid\=.+\&templateFlag\=1\&type\=2/,
+    contentScriptFile: [self.data.url("js/jquery.j"), self.data.url("js/practice_pk.js"),],
+});
+
+// 自助学期短评
+var semester_pk = require("sdk/page-mod");
+semester_pk.PageMod({
+    include: /http\:\/\/jiaowu.swjtu.edu.cn\/servlet\/AppraiseStudentAction\?Action\=submitInfo\&Forward\=Term/,
+    contentScriptFile: [self.data.url("js/jquery.js"), self.data.url("js/semester_pk.js"),],
+});
 
 // 图标点击事件
 function handleClick(state) {
-    tabs.open("http://www.desgard.com/");
+    alert('插件在正常工作。�� ��');
 }
